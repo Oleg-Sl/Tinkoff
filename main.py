@@ -189,10 +189,8 @@ def main(account_number, auth_token):
 
 
 if __name__ == '__main__':
+    logger_err.error("Start!")
     acc_number = get_secret_tinkoff("account_number")
     token = get_secret_tinkoff("auth_token")
     main(acc_number, token)
-
-
-
 
